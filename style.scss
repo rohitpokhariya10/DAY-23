@@ -1,0 +1,136 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(45, 42, 42);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+}
+
+/* ========== Main Section ========== */
+main {
+  width: 100%;
+
+  padding: 1.2rem;
+  display: flex;
+  
+  
+}
+
+/* ========== Container (view1) ========== */
+.view1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 100%;
+
+ 
+}
+
+/* ========== Top Image ========== */
+.top {
+  width: 100%;
+  border-radius: 0.7rem;
+ 
+}
+
+.top-img {
+  display: block;
+  width: 100%;
+ 
+  border-radius: 0.7rem;
+}
+
+/* ========== Bottom Card ========== */
+.bottom {
+  background-color: rgb(33, 29, 29);
+  width: 100%;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #f8eded;
+  padding: 2rem;
+
+}
+
+/* ========== Text Styles Inside Bottom ========== */
+.heading{
+  font-weight: 500;
+  color: rgb(248, 237, 237);
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.bottom h1 {
+  font-weight: 350;
+  color: rgb(248, 237, 237);
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.bottom p {
+  opacity: 0.95;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(150, 140, 140);
+}
+
+/* ========== Button ========== */
+.bottom button {
+  width: fit-content;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.bottom button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.03);
+}
+
+/* ========== Responsive Fix ========== */
+@media (min-width: 600px) {
+  main {
+ 
+    padding: 1rem;
+    
+    
+  }
+
+  .view1 {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .top-img {
+    border-radius: 0.6rem;
+    height: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+    padding: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+  }
+}
